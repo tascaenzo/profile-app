@@ -26,9 +26,9 @@ export class ProfilePage extends LitElement {
             programmazione!
           </p>
         </div>
-        <hr class="mt-6 hidden md:block" />
+        <hr class="mt-6" />
 
-        <div class="flex pt-4 gap-4">
+        <div class="flex pt-4 gap-4 flex-wrap">
           <button
             @click="${() => (this.selector = 0)}"
             class="${this.selector === 0 ? "btn" : "btn-outline"}"

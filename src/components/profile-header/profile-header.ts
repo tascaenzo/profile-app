@@ -24,9 +24,9 @@ export class ProfileHeader extends LitElement {
             </div>
           </div>
         </div>
-        <div class="flex flex-col gap-2 sm:flex-row">
+        <div class="hidden gap-4 sm:flex">
           <a
-            href="https://linkedin.com/in/your_username"
+            href="https://www.linkedin.com/in/enzo-tasca-4265b4198/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -35,7 +35,7 @@ export class ProfileHeader extends LitElement {
             ></i>
           </a>
           <a
-            href="https://github.com/your_username"
+            href="https://github.com/tascaenzo/"
             target="_blank"
             rel="noopener noreferrer"
           >
