@@ -25,7 +25,7 @@ export class ProfileCol extends LitElement {
         <div class="flex flex-col items-center gap-2">
           <div class="space-x-6">
             <a
-              href="https://linkedin.com/in/your_username"
+              href="https://www.linkedin.com/in/enzo-tasca-4265b4198/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -34,7 +34,7 @@ export class ProfileCol extends LitElement {
               ></i>
             </a>
             <a
-              href="https://github.com/your_username"
+              href="https://github.com/tascaenzo/"
               target="_blank"
               rel="noopener noreferrer"
             >

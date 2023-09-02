@@ -1,13 +1,15 @@
 import { withoutShadowDOM } from "@/utils/without-shadow-dom";
 import { customElement, state } from "lit/decorators.js";
-import { LitElement, html } from "lit";
+import { LitElement, html, nothing } from "lit";
 
 import "@components/profile-bio";
+import "@components/profile-skill";
+import "@components/work-experience";
 
 @withoutShadowDOM
 @customElement("profile-page")
 export class ProfilePage extends LitElement {
-  @state() index = 0;
+  @state() selector = 0;
 
   render() {
     return html`
@@ -25,7 +27,31 @@ export class ProfilePage extends LitElement {
           </p>
         </div>
         <hr class="mt-6 hidden md:block" />
-        <profile-bio class="max-w-3xl pt-4 "></profile-bio>
+
+        <div class="flex pt-4 gap-4">
+          <button
+            @click="${() => (this.selector = 0)}"
+            class="${this.selector === 0 ? "btn" : "btn-outline"}"
+          >
+            about
+          </button>
+          <button
+            @click="${() => (this.selector = 1)}"
+            class="${this.selector === 1 ? "btn" : "btn-outline"}"
+          >
+            skills
+          </button>
+          <button
+            @click="${() => (this.selector = 2)}"
+            class="${this.selector === 2 ? "btn" : "btn-outline"}"
+          >
+            work experiences
+          </button>
+        </div>
+
+        ${this.selector === 0 ? html`<profile-bio />` : nothing}
+        ${this.selector === 1 ? html`<profile-skill />` : nothing}
+        ${this.selector === 2 ? html`<work-experience />` : nothing}
       </div>
     `;
   }
