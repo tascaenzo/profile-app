@@ -13,7 +13,7 @@ export class ProfilePage extends LitElement {
 
   render() {
     return html`
-      <div class="flex flex-col p-4 text-gray-800 max-w-3xl">
+      <div class="flex flex-col p-0 pt-4 sm:p-4 text-gray-800 max-w-3xl">
         <div class="bg-gray-50 p-4 rounded-xl">
           <h1 class="h5 font-semibold mb-4">Benvenuti nella mia pagina</h1>
           <p class=" rounded-lg max-w-3xl">

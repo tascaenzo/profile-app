@@ -7,7 +7,7 @@ import { LitElement, html } from "lit";
 export class ProfileCol extends LitElement {
   render() {
     return html`
-      <div class="flex pt-16 pb-16 flex-col h-screen justify-between">
+      <div class="flex pt-16 pb-16 flex-col h-screen justify-between p-12">
         <div class="flex flex-col items-center">
           <img
             src="https://scontent-mxp2-1.xx.fbcdn.net/v/t1.18169-9/11227602_10205470475155199_1697663303956553402_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=_GBIUpc7sf8AX_kP2fR&_nc_ht=scontent-mxp2-1.xx&oh=00_AfB28y8fUTAUJfuQxr8YiCbIglKwgLKPbdQISh4AlA5DYQ&oe=65131B48"

@@ -8,7 +8,7 @@ export class ProfileHeader extends LitElement {
   render() {
     return html`
       <div
-        class="p-4 pb-8 border-b border-gray-200 flex items-center justify-between"
+        class=" pb-8 border-b border-gray-200 flex items-center justify-between"
       >
         <div class="flex items-center">
           <img
@@ -24,7 +24,7 @@ export class ProfileHeader extends LitElement {
             </div>
           </div>
         </div>
-        <div class="space-x-4">
+        <div class="flex flex-col gap-2 sm:flex-row">
           <a
             href="https://linkedin.com/in/your_username"
             target="_blank"

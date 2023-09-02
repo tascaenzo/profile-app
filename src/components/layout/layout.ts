@@ -18,11 +18,9 @@ export class LayoutComponent extends LitElement {
   render() {
     return html`
       <div class="layout-container">
-        <!-- Sidebar -->
         <div class="sidebar">
           <profile-col></profile-col>
         </div>
-        <!-- main content -->
         <main class="main-content">
           <profile-header class="sm:block md:hidden "></profile-header>
           <slot></slot>

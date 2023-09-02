@@ -1,11 +1,11 @@
 .layout-container {
-  @apply flex h-screen;
+  @apply flex h-screen justify-center;
 }
 
 .sidebar {
-  @apply flex-col items-center h-full hidden md:flex border-r border-gray-200 w-[450px];
+  @apply w-7/12 flex-col items-end h-full hidden md:flex border-r border-gray-200;
 }
 
 .main-content {
-  @apply w-full h-full overflow-auto mx-auto p-12;
+  @apply h-full p-12 overflow-auto w-full;
 }
